@@ -4,7 +4,6 @@ data.json を無料APIから自動更新するスクリプト。
 
 - 経済指標（NFP・CPI・FOMC実効金利・失業率・JOLTS）: FRED（無料・要APIキー）
   https://fred.stlouisfed.org/docs/api/api_key.html で無料登録して取得
-- ISM製造業雇用指数: 無料の公式APIが無いため自動更新の対象外（手動更新）
 
 GitHub Actions から1日1回実行される想定。
 実行に必要な環境変数:
@@ -257,8 +256,6 @@ def main():
         by_id["jolts"] = build_jolts()
     except Exception as e:
         print(f"[warn] JOLTS更新に失敗: {e}", file=sys.stderr)
-
-    # ism_mfg は手動更新のためそのまま保持
 
     data["indicators"] = list(by_id.values())
 
