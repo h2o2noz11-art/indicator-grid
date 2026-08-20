@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://h2o2noz11-art.github.io/indicator-grid/sitemap.xml
