@@ -1,59 +1,115 @@
 {
-  "updated_at": "2026-08-20T00:00:00Z",
+  "updated_at": "2026-08-21T03:32:11.768542+00:00",
   "indicators": [
     {
       "id": "nfp",
       "tag": "雇用",
       "name": "雇用統計（NFP）",
-      "next": "次回 2026/9/4",
-      "prev": { "date": "2026/7/2発表・6月分", "value": "+5.7万人", "trend": "flat", "vs": "予想 +11.3万人" },
-      "curr": { "date": "2026/8/7発表・7月分", "value": "−2.3万人", "trend": "down", "vs": "予想 +8.0万人 → 大幅未達" },
-      "note": "6月分に続き7月分も予想を下回り、労働市場の減速が鮮明に。失業率は4.1%に改善。",
-      "source": "FRED: PAYEMS（非農業部門雇用者数・前月差）"
+      "next": "次回発表日は米労働省の公式カレンダーを確認してください",
+      "prev": {
+        "date": "2026年5月分（速報)",
+        "value": "+0.2万人",
+        "trend": "up",
+        "vs": "前月差（FRED自動計算）"
+      },
+      "curr": {
+        "date": "2026年6月分（速報)",
+        "value": "−0.2万人",
+        "trend": "down",
+        "vs": "前月差（FRED自動計算）"
+      },
+      "note": "FRED(PAYEMS)から自動計算した前月差です。市場予想との比較値は含まれないため、必要に応じて手動で補ってください。",
+      "source": "FRED: PAYEMS"
     },
     {
       "id": "cpi",
       "tag": "物価",
       "name": "消費者物価指数（CPI）",
       "next": "次回 2026/9中旬",
-      "prev": { "date": "2026/7/15発表・6月分", "value": "+3.5%", "trend": "flat", "vs": "前年同月比" },
-      "curr": { "date": "2026/8/12発表・7月分", "value": "+3.4%", "trend": "up", "vs": "予想と一致・コアCPI +2.5%" },
+      "prev": {
+        "date": "2026/7/15発表・6月分",
+        "value": "+3.5%",
+        "trend": "flat",
+        "vs": "前年同月比"
+      },
+      "curr": {
+        "date": "2026/8/12発表・7月分",
+        "value": "+3.4%",
+        "trend": "up",
+        "vs": "予想と一致・コアCPI +2.5%"
+      },
       "note": "総合指数はわずかに鈍化も高止まり。コア指数は市場予想通りで様子見継続。",
       "source": "FRED: CPIAUCSL（消費者物価指数・前年比）"
     },
     {
       "id": "fomc",
       "tag": "金融政策",
-      "name": "FOMC 政策金利（実効FF金利）",
-      "next": "次回 2026/9/16-17",
-      "prev": { "date": "2026/6/17決定", "value": "3.50–3.75%", "trend": "flat", "vs": "4会合連続据え置き" },
-      "curr": { "date": "2026/7/29決定", "value": "3.50–3.75%", "trend": "flat", "vs": "5会合連続据え置き・9対3" },
-      "note": "3名の地区連銀総裁が利上げを主張して反対票。9月会合が「ライブ」な会合になる可能性。",
-      "source": "FRED: FEDFUNDS（実効フェデラルファンド金利、参考値）"
+      "name": "FOMC 政策金利（実効FF金利・参考値）",
+      "next": "次回発表日はFRBの公式カレンダーを確認してください",
+      "prev": {
+        "date": "2026年6月分",
+        "value": "3.63%",
+        "trend": "flat",
+        "vs": "実効金利（月中平均）"
+      },
+      "curr": {
+        "date": "2026年7月分",
+        "value": "3.63%",
+        "trend": "flat",
+        "vs": "実効金利（月中平均）"
+      },
+      "note": "FEDFUNDSは実際の取引金利の月中平均であり、FOMCが発表する誘導目標レンジ（例:3.50-3.75%）とは異なる参考値です。",
+      "source": "FRED: FEDFUNDS"
     },
     {
       "id": "unrate",
       "tag": "雇用",
       "name": "失業率",
-      "next": "次回 2026/9/4（NFPと同時）",
-      "prev": { "date": "2026年6月分", "value": "4.2%", "trend": "flat", "vs": "前月比横ばい〜小幅改善" },
-      "curr": { "date": "2026年7月分", "value": "4.1%", "trend": "down", "vs": "改善（低いほど良好）" },
-      "note": "雇用者数の伸びが鈍化する一方、失業率自体は小幅改善。労働参加率の動きに注意。",
-      "source": "FRED: UNRATE（失業率）"
+      "next": "次回発表日はBLSの公式カレンダーを確認してください（NFPと同時発表）",
+      "prev": {
+        "date": "2026年6月分",
+        "value": "4.2%",
+        "trend": "flat",
+        "vs": ""
+      },
+      "curr": {
+        "date": "2026年7月分",
+        "value": "4.1%",
+        "trend": "down",
+        "vs": "低いほど良好"
+      },
+      "note": "FRED(UNRATE)から自動取得。",
+      "source": "FRED: UNRATE"
     },
     {
       "id": "jolts",
       "tag": "求人",
       "name": "JOLTS 求人件数",
-      "next": "次回 2026/9初旬",
-      "prev": { "date": "2026年5月分", "value": "753.7万件", "trend": "flat", "vs": "" },
-      "curr": { "date": "2026年6月分", "value": "735.9万件", "trend": "down", "vs": "3月以来の低水準・求人は頭打ち" },
-      "note": "求人件数の減少が続き、雇用統計と合わせて労働需給の緩みを裏づける内容。",
-      "source": "FRED: JTSJOL（求人件数）"
+      "next": "次回発表日はBLSの公式カレンダーを確認してください",
+      "prev": {
+        "date": "2026年5月分",
+        "value": "7.5万件",
+        "trend": "flat",
+        "vs": ""
+      },
+      "curr": {
+        "date": "2026年6月分",
+        "value": "7.4万件",
+        "trend": "down",
+        "vs": ""
+      },
+      "note": "FRED(JTSJOL)から自動取得。JOLTSはNFPより約1〜2ヶ月遅れて発表されます。",
+      "source": "FRED: JTSJOL"
     }
   ],
   "market": {
-    "usdjpy": { "price": null, "as_of": null },
-    "gold_usd_oz": { "price": null, "as_of": null }
+    "usdjpy": {
+      "price": null,
+      "as_of": null
+    },
+    "gold_usd_oz": {
+      "price": null,
+      "as_of": null
+    }
   }
 }
