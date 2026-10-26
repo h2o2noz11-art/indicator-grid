@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T03:59:39.992536+00:00",
+  "updated_at": "2026-10-26T04:04:22.282601+00:00",
   "indicators": [
     {
       "id": "nfp",
@@ -104,8 +104,8 @@
   ],
   "market": {
     "usdjpy": {
-      "price": null,
-      "as_of": null
+      "price": 156.8,
+      "as_of": "2026-10-23"
     },
     "gold_usd_oz": {
       "price": null,
