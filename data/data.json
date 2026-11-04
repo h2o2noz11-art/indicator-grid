@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T05:58:41.634469+00:00",
+  "updated_at": "2026-11-04T05:38:00.257536+00:00",
   "indicators": [
     {
       "id": "nfp",
@@ -87,15 +87,15 @@
       "name": "JOLTS 求人件数",
       "next": "次回発表日はBLSの公式カレンダーを確認してください",
       "prev": {
-        "date": "2026年7月分",
-        "value": "7.3万件",
+        "date": "2026年8月分",
+        "value": "7.2万件",
         "trend": "flat",
         "vs": ""
       },
       "curr": {
-        "date": "2026年8月分",
-        "value": "7.1万件",
-        "trend": "down",
+        "date": "2026年9月分",
+        "value": "7.5万件",
+        "trend": "up",
         "vs": ""
       },
       "note": "FRED(JTSJOL)から自動取得。JOLTSはNFPより約1〜2ヶ月遅れて発表されます。",
@@ -104,8 +104,8 @@
   ],
   "market": {
     "usdjpy": {
-      "price": 157.9,
-      "as_of": "2026-11-02"
+      "price": 158.29,
+      "as_of": "2026-11-03"
     },
     "gold_usd_oz": {
       "price": null,
